@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>News</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="News">
+  
+  <ion-card *ngFor="let story of channel">
+    <img [src]="story.urlsToLogos.medium" alt="Description" />
+    <ion-card-header>
+      {{story.name}}
+    </ion-card-header>
+    <ion-card-content>
+      {{story.description}}
+    </ion-card-content>
+</ion-card>
+
+
+</ion-content>
